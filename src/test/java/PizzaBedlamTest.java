@@ -9,32 +9,24 @@ public class PizzaBedlamTest {
     @Test
     void pizzaProscuttoEFunghi() {
 
-        assertThat(new Pizza("PROSCIUTTO E FUNGHI").getTicket(), equalTo("PROSCIUTTO E FUNGHI   12,50€\n" +
-                "   _____________________________\n" +
-                "   TOTAL                 12,50€"));
+        assertThat(new Pizza("PROSCIUTTO E FUNGHI").getPrice(), equalTo(12.50));
     }
 
     @Test
     void pizzaMargherita() {
 
-        assertThat(new Pizza("MARGHERITA").getTicket(), equalTo("MARGHERITA   9,30€\n" +
-                "   _____________________________\n" +
-                "   TOTAL                 9,30€"));
+        assertThat(new Pizza("MARGHERITA").getPrice(), equalTo(9.30));
     }
 
     @Test
     void pizzaProscutto() {
 
-        assertThat(new Pizza("PROSCIUTTO").getTicket(), equalTo("PROSCIUTTO   12,00€\n" +
-                "   _____________________________\n" +
-                "   TOTAL                 12,00€"));
+        assertThat(new Pizza("PROSCIUTTO").getPrice(), equalTo(12.00));
     }
 
     @Test
     void pizza4STAGIONI() {
 
-        assertThat(new Pizza("4 STAGIONI").getTicket(), equalTo("4 STAGIONI   12,50€\n" +
-                "   _____________________________\n" +
-                "   TOTAL                 12,50€"));
+        assertThat(new Pizza("4 STAGIONI").getPrice(), equalTo(12.5));
     }
 }
